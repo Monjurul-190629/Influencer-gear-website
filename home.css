@@ -143,10 +143,43 @@ main .section-card .section-card-container div p{
     font-size: 0.9rem;
     color: rgba(17, 7, 7, 0.973);
 }
+main .section-card button a{
+    border: none;
+    cursor: pointer;
+    color: deeppink;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: absolute;
+    right: 70px;
+    top: 450vh;
+    text-decoration: none;
+}
 
-
-
-
+/* footer */
+footer{
+    background: #0A0826;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    padding-right: 12px;
+}
+footer a .fa-brands{
+    font-size: 1rem;
+    transition: .5s;
+}
+footer a .fa-brands:hover{
+    transform: scale(1.5);
+    transition: .5s;
+}
 /* responsive */
 @media screen and (max-width: 700px){
     header{
@@ -154,7 +187,6 @@ main .section-card .section-card-container div p{
     }
     header nav{
         flex-direction: column;
-        font-size: .8rem;
         justify-content: center;
         margin: 10px 5px;
     }
@@ -166,7 +198,7 @@ main .section-card .section-card-container div p{
     }
     
     header ul li a{
-        font-size: .7rem;
+        font-size: .98rem;
     }
     header ul li a:hover{
         font-size: .75rem;

@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header starts */
+header{
+    margin: 40px 80px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+header ul li{
+    padding-right: 15px;
+}
+
+header ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    transition: .4s;
+}
+header ul li a:hover{
+    transition: 0.4s;
+    font-size: 1.05rem;
+    color: darkred;
+}
+header ul li a:active{
+    color: blueviolet;
+}
+
+header .logo{
+    text-shadow: 5px 7px 10px blueviolet;
+    transition: .7s;
+}
+header .logo:hover{
+    transform: rotate(360deg);
+    text-shadow: 5px 7px 10px red;
+    border: 1px solid blueviolet;
+    background: rgba(200, 10, 10, .3);
+    transition: .8s;
+    color: white;
+    padding: 5px 8px;
+}
+header .banner{
+    margin: 50px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .banner .banner-content{
+    width: 500px;
+}
+header .banner .banner-content p{
+    color: rgba(0, 0, 2, 0.9);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.btn{
+    border-radius: 10px;
+    background: #E02C6D;
+    color: white;
+    padding: 3px 6px;
+    border: 1px solid white;
+    transition: .5s;
+    font-size: .9rem;
+}
+.btn:hover{
+    background: white;
+    color: #E02C6D;
+    transition: .5s;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 1rem;
+}
+header .banner .banner-img img{
+    width: 100%;
+    margin-left: 40px;
+}
+
+
+/* main - section */
+
+main .section-first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 65px;
+}
+main .section-first a{
+    margin: 0 30px;
+    transition: .5s;
+}
+main .section-first a:hover{
+    transform: scale(1.2);
+}
+
+/* section-card */
+main .section-card{
+    margin: 50px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main .section-card .section-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+main .section-card .section-card-container img{
+    width: 300px;
+    height: 270px;
+
+}
+main .section-card .section-card-container .fa-star{
+    color: rgb(184, 156, 0);
+}
+
+main .section-card .section-card-container div{
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 0;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+    
+}
+.info-tag{
+    color:rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+main .section-card .section-card-container div p{
+    font-size: 0.9rem;
+    color: rgba(17, 7, 7, 0.973);
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width: 700px){
+    header{
+        margin: 30px 10px;
+    }
+    header nav{
+        flex-direction: column;
+        font-size: .8rem;
+        justify-content: center;
+        margin: 10px 5px;
+    }
+    header ul {
+        margin-top: 20px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    header ul li a{
+        font-size: .7rem;
+    }
+    header ul li a:hover{
+        font-size: .75rem;
+    }
+    header ul li a:active{
+        color: blueviolet;
+    }
+    header .banner{
+        margin-top: 30px;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    header .banner .banner-content{
+        width: 300px;
+        text-align: center;
+    }
+    header .banner .banner-content p{
+        margin-top: 10px;
+        color: rgba(0, 0, 2, 0.9);
+        margin-bottom: 10px;
+    }
+    .btn{
+        border-radius: 10px;
+        background: #E02C6D;
+        color: white;
+        padding: 3px 6px;
+        border: 1px solid white;
+        transition: .5s;
+        font-size: .9rem;
+    }
+    .btn:hover{
+        background: white;
+        color: #E02C6D;
+        transition: .5s;
+        border-radius: 10px;
+        border: 2px solid black;
+        font-size: 1rem;
+    }
+    header .banner .banner-img img{
+        width: 110%;
+        margin-left: 0;
+        padding-bottom: 20px;
+    }
+    /* section-first */
+    main .section-first{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 10px 16px;
+    }
+    main .section-first a{
+        margin: 8px;
+        transition: .5s;
+    }
+    main .section-first a:hover{
+        transform: scale(1.2);
+    }
+    main .section-first img{
+        width: 80%;
+    }
+
+
+    /* section card */
+    /* section-card */
+main .section-card{
+    margin: 20px 20px;
+}
+main .section-card .section-card-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+main .section-card .section-card-container img{
+    width: 200px;
+    height: 160px;
+}
+main .section-card .section-card-container .fa-star{
+    color: rgb(184, 156, 0);
+    font-size: 0.8rem;
+}
+
+main .section-card .section-card-container div{
+    padding: 30px;
+}
+.info-tag{
+    color:rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 50px;
+}
+main .section-card .section-card-container div p{
+    font-size: 0.8rem;
+}
+    
+}
+
+/* responsive for tablets */
+@media screen and (max-width: 1050px) and (min-width: 700px) {
+    /* main - section */
+
+main .section-first{
+   flex-wrap: wrap;
+}
+main .section-first img{
+    padding-bottom: 20px;
+}
+/* section-card */
+main .section-card{
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .section-card .section-card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+main .section-card .section-card-container img{
+    width: 250px;
+    height: 200px;
+}
+
+main .section-card .section-card-container div{
+    padding: 25px;
+}
+
+main .section-card .section-card-container div{
+    margin-left: 0;
+    position: relative;
+}
+.info-tag{
+    margin-top: 10px;
+}
+
+}
